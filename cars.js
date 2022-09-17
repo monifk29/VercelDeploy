@@ -141,9 +141,20 @@ function handleFilter(){
 let sort = document.getElementById("sort");
 sort.addEventListener("change",() => {
 
-    value = sort.value;
-    let link = `https://glacial-bastion-32625.herokuapp.com/cars?_sort=${sort.value}&_order=asc`
-    fetchfromurl(link)
+     
+   if(sort.value === "price"){
+    let link = `https://ancient-caverns-16282.herokuapp.com/cars?_sort=Price&_order=asc`
+    getData(link)
+   }
+
+   else if(sort.value === "km" ){
+
+    let link = `https://ancient-caverns-16282.herokuapp.com/cars?_sort=kms&_order=asc`
+    getData(link)
+
+   }
+    
+   
 })
 
 
