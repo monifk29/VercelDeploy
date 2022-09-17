@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>Edit your Price</h4>
+
+    <input id="editInput">
+
+    <button id="editBtn">Edit</button>
+
+    
+    
+</body>
+</html>
+
+<script>
+
+
+let editBtn = document.getElementById("editBtn")
+
+
+
+
+editBtn.addEventListener("click",  () => {
+
+    var id = JSON.parse(localStorage.getItem("car_id"));
+
+    console.log(id);
+
+var url = `https://ancient-caverns-16282.herokuapp.com/cars/${id}` ;
+
+    let edit = document.getElementById("editInput");
+
+    let payload = {
+    Price : edit.value
+}
+
+    fetch(url,{
+        method : "PATCH",
+        body : JSON.stringify(payload),
+        headers : {"content-type":"application/json"}
+    }).then((res) => console.log(res)).catch((err) => console.log(err))
+
+    console.log(edit.value);
+
+    // window.location.href = "cars.html"
+    alert("edit success");
+
+
+    window.location.href = "./cars.html"
+
+
+})
+
+
+</script>

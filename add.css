@@ -1,0 +1,116 @@
+#form{
+    /* display: flex; */
+   margin: auto;
+   border: 1px solid black;
+   margin-top: 150px;
+   background-color: teal;
+   width: 50%;
+ justify-content: center;
+ align-items: center;
+
+ padding: 30px 10px;
+}
+
+input{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px 8px;
+    width: 40%;
+}
+
+select{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+     padding: 10px 20px;
+     width: 40%;
+}
+
+button{
+    margin-left: 45%;
+    margin-top: 10px;
+
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+}
+
+#submit{
+    background-color: teal;
+    color: #fefefe;
+}
+
+h1{
+    color: teal;
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+
+
+  h2{
+margin-left: 40%;
+color: #fefefe;
+font-size: x-large;
+text-decoration: underline;
+  }
+  .modal-content {
+    background-color: #fefefe;
+    /* margin: 15% auto; 15% from the top and centered */
+    margin-top: 30px;
+    margin-left: 30%;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 30%;
+  }
+
+  #first{
+    height: 20px;
+    width: 20px;
+}
+
+#second{
+    height: 20px;
+    width: 20px;
+}
+
+#third{
+    height: 20px;
+    width: 20px;
+}
+
+#four{
+    height: 20px;
+    width: 20px;
+}
+
+#otpbox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#myBtn{
+
+    background-color: white;
+    color: teal;
+    border: none;
+    margin-top: 25px;
+
+}

@@ -1,0 +1,46 @@
+#container{
+    display: grid;
+    grid-template-columns : repeat(3,1fr);
+    grid-gap: 40px;
+
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#yename{
+    display: flex;
+    
+}
+
+#yename p{
+    margin-left: 10px;
+}
+
+#card{
+    border:  1px solid black;
+    padding: 10px 20px;
+}
+
+p{
+    margin-left: 10px;
+}
+
+#end{
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    background-color: teal;
+    color: whitesmoke;
+    border: 1px solid teal;
+}
+
+#price{
+    color: tomato;
+}
+
+
